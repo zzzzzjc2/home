@@ -1,26 +1,3 @@
-简体中文 | [English](./README_EN.md)
-
-> [!IMPORTANT]
-> ## 致大家
-> 此项目最初只是一个简单的主页。然而，随着越来越多的小伙伴发现了这个项目，它受到了大量本不应有的关注。而且，此项目作为初学前端的作品，其代码相当杂乱且质量低下。此外，该项目还遭到众多不明资源站或下载站的倒卖，致使许多不明真相的购买者从源代码中找到本人的联系方式进行问题咨询或提出功能需求。由于目前个人原因，该仓库进行存档，敬请谅解！
-
-<p>
-<strong><h2>無名の主页</h2></strong>
-简单的小主页，原来的看够了，重新弄了一个
-</p>
-
-![無名の主页](/screenshots/main.jpg)
-
-> 主页的 Logo 字体已经过压缩，若用本站 Logo 以外的字母会变回默认字体，这里是 [完整字体](https://file.imsyy.top/font/Other/Pacifico-Regular.ttf)，若无法下载，可将字体目录下的 `Pacifico-Regular-all.ttf` 进行替换
-
-### 👀 Demo
-
-> 由于 CDN 缓存原因，查看最新效果可能需要 `Ctrl` + `F5` 强制刷新浏览器缓存
-
-- [無名の主页](https://www.imsyy.top)
-- [無名の主页 - Dev](https://home-imsyy.vercel.app)
-- [無名の主页 - 备用线路](https://home-5iw.pages.dev)
-
 ### 🎉 功能
 
 - [x] 载入动画
@@ -132,10 +109,6 @@ const siteIcon = {
 };
 ```
 
-### 社交链接
-
-在 `src/assets/socialLinks.json` 中可以自定义社交链接。
-
 ### 天气
 
 天气及地区获取需要 `高德开放平台` 相关 API
@@ -161,49 +134,6 @@ VITE_SONG_TYPE = "playlist"
 # 播放 ID
 VITE_SONG_ID = "7452421335"
 ```
-
-### 字体
-
-现采用 `HarmonyOS Sans` 开源字体，采用字体拆分，提升加载速度
-
-> 由于本站 `CDN` 已开启防盗链，**非本站域名不可访问**，请将字体引入链接更改为下方内容，否则 **自定义字体将失效**
->
-> `https://s1.hdslb.com/bfs/static/jinkela/long/font/regular.css`
-
-<details>
-<summary>旧版方式</summary>
-
-> 由于本项目引入了中文字体，需要压缩中文字体以提高网页加载速度（ 也可以取消使用中文字体 ）
-
-#### 中文字体去除繁体
-
-- 安装 `Python 3.7` 和 `pip`
-- 运行 `pip install fonttools`
-- 下载 [sc_unicode.txt](https://gist.githubusercontent.com/imaegoo/d64e5088b723c2e02c40985f55ff12db/raw/5ebd2ce49418c73459a9dfe050483409306a6c1d/sc_unicode.txt)
-- 运行 `pyftsubset 字体名称.ttf --unicodes-file=sc_unicode.txt`
-
-#### 字体进一步压缩
-
-- 编译安装 `Google woff2`
-
-```bash
-sudo apt-get install -y git g++ make
-git clone --recursive https://github.com/google/woff2.git
-cd woff2
-make clean all
-```
-
-- 再压缩字体
-
-```
-./woff2_compress ./字体名称.ttf
-```
-
-- 最终可对原字体进行缓加载，**先行加载压缩后的字体**
-
-> 详细信息可前往 [虹墨空间站](https://www.imaegoo.com/2020/chinese-font-compress/) 查看原文
-
-</details>
 
 ### 网站图标及网站背景
 
