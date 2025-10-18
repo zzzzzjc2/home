@@ -1,5 +1,5 @@
 <h4>基于"https://github.com/imsyy/home"</h4>
-
+(/screenshots/main.jpg)
 ### 🎉 功能
 
 - [x] 载入动画
