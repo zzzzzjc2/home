@@ -1,6 +1,6 @@
 <h4>基于"https://github.com/imsyy/home"</h4>
 
-(/screenshots/main.png)
+![图](/screenshots/main.png)
 
 ### 🎉 功能
 
